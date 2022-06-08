@@ -65,7 +65,7 @@ try:
         i = file.readline()
         if i == "":
             break
-        a = text.split()
+        a = i.split()
         Insert = """INSERT INTO marvel (ID, MOVIE, DATE, MCU_PHASE)
                  VALUES (%s, %s, %s, %s)"""
         record = (a[0], a[1], a[2], a[3])
